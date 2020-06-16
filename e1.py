@@ -118,7 +118,7 @@ def ok():
         M5.pack(pady=10)
         M6.pack(pady=10)
         
-        
+#splitting the dataset to train and test sets        
 def svmdivntrn():
     
    
@@ -171,7 +171,7 @@ def svmacc():
     lab=tkr.Label(top,text='Accuracy Shown Successfully')
     lab.pack()
     
-    
+#onehotencoding on dataset before training with mlp model    
 def onehotenc():
      from sklearn.preprocessing import StandardScaler
      from sklearn.preprocessing import OneHotEncoder
@@ -302,7 +302,7 @@ B2 = tkr.Button(top,text="Load ground truth",command=ldgtfile)
 B4 = tkr.Button(top,text='Show Ground Truth',command=shwgt)
 
 
-
+#choosing between mlp or svm
 variable = StringVar(top)
 
 
